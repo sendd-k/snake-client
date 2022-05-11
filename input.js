@@ -28,6 +28,12 @@ const handleUserInput = function (data){
     if(data === '\u0003') {
     process.exit();
     };
+    if(data === 'h'){
+      connection.write("Say: Hello")
+    }
+    if(data === 't'){
+      connection.write("Say: There")
+    }
   };
 
 
